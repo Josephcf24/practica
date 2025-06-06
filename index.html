@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <style>
+    /* Estilos generales */
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
@@ -76,18 +77,34 @@
       color: #3498db;
     }
 
+    /* Estilos para los enlaces */
     a {
-      color: #2c3e50;
-      text-decoration: none;
-      transition: all 0.3s ease;
+      color: #007bff; /* Azul para los enlaces */
       font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s ease;
     }
 
     a:hover {
-      color: #2980b9;
+      color: #0056b3; /* Azul más oscuro al pasar el mouse */
       text-decoration: underline;
     }
 
+    /* Agregar ícono de enlace externo */
+    a::after {
+      content: " ↗"; /* Ícono de enlace */
+      font-size: 0.85em;
+      color: #007bff;
+    }
+
+    /* Para los íconos dentro de enlaces */
+    a i {
+      margin-left: 4px;
+      color: #007bff;
+      font-size: 0.8em;
+    }
+
+    /* Medidas para pantallas pequeñas */
     @media (max-width: 600px) {
       .profile-image img {
         width: 100px;
@@ -143,4 +160,6 @@
     <p><i class="fas fa-envelope"></i> Puedes escribirme a: <a href="mailto:mariajose@example.com">mariajose@example.com</a></p>
   </div>
 </body>
+</html>
+
 </html>
